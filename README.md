@@ -1,69 +1,37 @@
-# React + TypeScript + Vite
+# SaaS Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern SaaS analytics dashboard built with **React**, **TypeScript**, **Tailwind CSS**, **Vite**, **TanStack Query**, and **Recharts**.  
+Features KPI cards, charts, responsive layout, and a pluggable API layer (with a mock API for local development).
 
-Currently, two official plugins are available:
+![Dashboard Screenshot](./docs/screenshot.png) <!-- Optional: replace with your image -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📊 KPI cards (MRR, Active Users, ARPU, Churn)
+- 📈 Time-series line chart (DAU)
+- 📊 Bar chart (Revenue by Plan)
+- 🥧 Pie chart (Top Countries)
+- 🔄 Mock API for development (no backend required)
+- 🎨 Responsive, modern UI with Tailwind CSS
+- 🔍 Type-safe API responses with Zod
+- ⚡ Fast dev build via Vite
+- 🧩 Easy to extend for new pages and metrics
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📦 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React 18** + **TypeScript**
+- **Vite** (bundler/dev server)
+- **Tailwind CSS** (utility-first styling)
+- **TanStack Query** (data fetching + caching)
+- **Axios** (HTTP client)
+- **Zod** (runtime type validation)
+- **Recharts** (charts)
+- **React Router** (routing)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<img width="1919" height="830" alt="image" src="https://github.com/user-attachments/assets/75e27a17-e31b-481a-bb81-f16b52063830" />
