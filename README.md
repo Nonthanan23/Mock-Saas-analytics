@@ -3,7 +3,8 @@
 A modern SaaS analytics dashboard built with **React**, **TypeScript**, **Tailwind CSS**, **Vite**, **TanStack Query**, and **Recharts**.  
 Features KPI cards, charts, responsive layout, and a pluggable API layer (with a mock API for local development).
 
-![Dashboard Screenshot](./docs/screenshot.png) <!-- Optional: replace with your image -->
+<img width="1918" height="939" alt="image" src="https://github.com/user-attachments/assets/d2d6305d-e7a9-422f-9331-1f5ef174b1d4" />
+
 
 ---
 
@@ -33,5 +34,3 @@ Features KPI cards, charts, responsive layout, and a pluggable API layer (with a
 - **React Router** (routing)
 
 ---
-
-<img width="1919" height="830" alt="image" src="https://github.com/user-attachments/assets/75e27a17-e31b-481a-bb81-f16b52063830" />
